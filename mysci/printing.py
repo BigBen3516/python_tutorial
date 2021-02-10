@@ -14,5 +14,5 @@ def print_comparison(name, dates, times, original_data, computed_data):
    print('                ORIGINAL  COMPUTED')
    print(' DATE    TIME  {name.upper():>9} {name.upper():>9} DIFFERENCE')
    print('------- ------ --------- --------- ----------')
-   for date, time, orig, comp in zip(dates, times, original_data, computer_data):
+   for date, time, orig, comp in zip(dates, times, original_data, computed_data):
       print(f'{date} {time:>6} {orig:9.6f} {comp:9.6f} {orig-comp:10.6f}')
